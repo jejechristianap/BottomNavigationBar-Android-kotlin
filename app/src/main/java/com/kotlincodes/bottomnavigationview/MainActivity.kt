@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity()  {
         title=resources.getString(R.string.favorites)
         loadFragment(FavoriteFragment())
 
+        navigationView
+
         navigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.navigation_fav-> {
